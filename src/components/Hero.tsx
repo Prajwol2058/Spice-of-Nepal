@@ -20,9 +20,9 @@ function Hero() {
             <div className="text-xl font-semibold text-center text-white max-md:text-lg max-sm:text-base">
               Spice of Nepal, Kathmandu
             </div>
-            <div className="px-8 py-4 mt-5 text-base font-bold text-amber-500 rounded-3xl border-amber-500 border-solid transition-all cursor-pointer border-[3px] duration-[0.3s] ease-[ease] max-sm:px-6 max-sm:py-3 max-sm:text-sm">
+            <button className="px-8 py-4 mt-5 text-base font-bold text-amber-500 rounded-3xl border-amber-500 border-solid transition-all cursor-pointer border-[3px] duration-[0.3s] ease-[ease] max-sm:px-6 max-sm:py-3 max-sm:text-sm hover:bg-amber-500 hover:text-white hover:scale-105">
               Book a table
-            </div>
+            </button>
           </div>
         </div>
         <div>
