@@ -3,6 +3,7 @@
 import * as React from "react";
 import { ShoppingCart, User, Menu } from "lucide-react";
 import NavigationMenu from "./Navigation";
+import LanguageSwitcher from "./LanguageSwitcher"; // Import LanguageSwitcher
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -52,6 +53,11 @@ const Navbar = () => {
           >
             <Menu size={24} />
           </button>
+
+          {/* Add LanguageSwitcher here */}
+          <div className="text-white">
+            <LanguageSwitcher />
+          </div>
         </nav>
       </header>
 
