@@ -1,26 +1,27 @@
 "use client";
 import * as React from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 function ImageGallery() {
   return (
     <div className="ml-5 grid grid-cols-3 gap-5 max-md:grid-cols-3 max-md:px-4 auto-rows-min">
       <div className="w-full">
-        <img
+        <Image
           src="./aboutus/Jimbuthakali.jpg"
           alt="Nepalese cuisine presentation"
           className="object-cover w-full rounded-md h-[400px] max-md:h-[150px]"
         />
       </div>
       <div className="w-full">
-        <img
+        <Image
           src="./aboutus/momo.jpg"
           alt="Traditional dishes display"
           className="object-cover w-full rounded-md h-[400px] mt-10 max-md:h-[180px] max-md:mt-0"
         />
       </div>
       <div className="w-full">
-        <img
+        <Image
           src="./aboutus/naan.jpg"
           alt="Authentic food presentation"
           className="object-cover w-full rounded-md h-[400px] max-md:h-[160px]"

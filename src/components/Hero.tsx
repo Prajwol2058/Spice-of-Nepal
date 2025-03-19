@@ -1,5 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import * as React from "react";
 
 function Hero() {
@@ -8,7 +9,7 @@ function Hero() {
     <>
       <div className="overflow-hidden relative w-full h-screen max-md:h-[550px]">
         <div className="relative size-full">
-          <img
+          <Image
             src="/hero/hero.png"
             className="object-cover size-full"
             alt="Restaurant background"
@@ -28,7 +29,7 @@ function Hero() {
           </div>
         </div>
         <div>
-          <img
+          <Image
             src="/hero/decorative.png"
             alt="Decorative pattern"
             className="absolute right-0 bottom-0 w-[451px] h-[321px] opacity-10"
