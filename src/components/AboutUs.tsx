@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import { useTranslations } from "next-intl";
 
 function ImageGallery() {
   return (
@@ -30,23 +31,17 @@ function ImageGallery() {
 }
 
 function AboutContent() {
+  const t = useTranslations();
   return (
     <article className="ml-5 mr-5 flex flex-col items-start max-md:items-center max-md:text-justify">
       <h2 className="text-4xl font-serif text-amber-500 max-md:text-3xl text-center">
-        About Us
+        {t("aboutUstitle")}
       </h2>
       <p className="text-black mt-6 text-lg max-md:max-w-full">
-        The classic and traditionally authentic Nepalese and Indian cuisine is
-        presented in a tasteful way, harboring the essences of freshest and
-        choicest ingredients and best spices available.
-        <br />
-        The tastefully adapted Nepalese and Indian cuisine in a contemporary
-        rustic setting: Cuisine Kathmandu is a modern yet simple rendering of
-        age-old classic cuisine from the sub-continent; heralded for their rich
-        cultural heritage and piquancy.
+        {t("aboutUsdescription")}
       </p>
       <button className="mt-6 px-4 py-3 text-lg text-center text-white bg-amber-500 rounded-md hover:bg-amber-600 transition">
-        Discover About Us
+        {t("aboutUsbutton")}{" "}
       </button>
     </article>
   );
