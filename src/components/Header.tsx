@@ -3,6 +3,8 @@
 import * as React from "react";
 import { ShoppingCart, User, Menu } from "lucide-react";
 import NavigationMenu from "./Navigation";
+import LanguageSwitcher from "./LanguageSwitcher"; // Import LanguageSwitcher
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -21,7 +23,7 @@ const Navbar = () => {
     <>
       <header className="flex justify-between items-center px-16 py-0 w-full h-24 bg-red-950 max-md:px-10 max-md:py-0 max-sm:px-5 max-sm:py-0 max-sm:h-[72px]">
         <div className="h-[84px] w-[91px] max-sm:h-16 max-sm:w-[70px]">
-          <img
+          <Image
             src="/navbar/logo.png"
             alt="Company Logo"
             className="w-full h-full object-contain"
@@ -52,6 +54,11 @@ const Navbar = () => {
           >
             <Menu size={24} />
           </button>
+
+          {/* Add LanguageSwitcher here */}
+          <div className="text-white">
+            <LanguageSwitcher />
+          </div>
         </nav>
       </header>
 
