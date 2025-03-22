@@ -76,11 +76,6 @@ const Footer: React.FC = () => {
         <div className="flex gap-5 max-md:flex-col">
           <FooterColumn title={t("footertitle")}>
             <p className="mt-4 text-base">{t("footerdescription")}</p>
-            <img
-              src="/navbar/logo.png"
-              alt="Logo"
-              className="object-contain mt-6 max-w-full aspect-[3.36] w-[215px]"
-            />
           </FooterColumn>
 
           <FooterColumn title={t("footerhours")}>

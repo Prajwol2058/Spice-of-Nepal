@@ -27,6 +27,8 @@ const Navbar = () => {
             src="/navbar/logo.png"
             alt="Company Logo"
             className="w-full h-full object-contain"
+            width={91}
+            height={84}
           />
         </div>
 
