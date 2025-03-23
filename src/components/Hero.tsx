@@ -13,6 +13,8 @@ function Hero() {
             src="/hero/hero.png"
             className="object-cover size-full"
             alt="Restaurant background"
+            width={1920}
+            height={1080}
           />
         </div>
         <div className="flex absolute top-2/4 left-2/4 justify-center items-center px-2 py-14 w-full -translate-x-2/4 -translate-y-2/4 max-w-[664px] max-md:px-4 max-md:py-10">
@@ -33,6 +35,8 @@ function Hero() {
             src="/hero/decorative.png"
             alt="Decorative pattern"
             className="absolute right-0 bottom-0 w-[451px] h-[321px] opacity-10"
+            width={451}
+            height={321}
           />
         </div>
       </div>
